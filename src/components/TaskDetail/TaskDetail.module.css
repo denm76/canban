@@ -1,0 +1,39 @@
+.task__wrapper {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.task__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__title {
+  margin: 0;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.select {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.task__chancellink {
+  display: block;
+  margin: 20px 0; 
+}
+
+.emptyState {
+  text-align: center;
+}
+
+.emptyStateIcon {
+  width: 200px;
+}

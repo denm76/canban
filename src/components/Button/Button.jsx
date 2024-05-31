@@ -1,7 +1,5 @@
-import classes from './Button.module.css'
-
-export default function Button() {
+export default function Button(props) {
   return (
-    <div></div>
+    <button {...props} type='submit'>{props.children}</button>
   )
 }

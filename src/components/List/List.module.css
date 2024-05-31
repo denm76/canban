@@ -1,0 +1,47 @@
+.list {
+	width: 25%;
+  background: #EBECF0;
+	padding: 12px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-right: 24px;
+}
+
+.list:last-child {
+	margin-right: 0;
+}
+
+.list__title {
+	margin-top: 0;
+}
+
+.list__task {
+	background: #ffffff;
+	color: #000;
+	margin: 7px 0;
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.list__task:hover {
+	text-decoration: underline;
+}
+
+.list__taskLink {
+	text-decoration: none;
+}
+
+.list__addButton {
+	background: none;
+	border: none;
+	padding: 4px 5px;
+	appearance: none;
+	font-size: 15px;
+	color: #737373;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.list__addButton:hover {
+	background: #fff;
+}

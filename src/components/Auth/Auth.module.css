@@ -1,0 +1,59 @@
+.auth__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.auth__avatar {
+  padding-right: 6px;
+  cursor: pointer;
+}
+
+.auth__arrow {
+  display: block;
+  width: 22px;
+  height:16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.auth__arrow.auth__visible {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.auth__menu {
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 55px;
+  left: -90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.auth__menu:after {
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  bottom: 100%;
+  right: 18px;
+  content: "";
+}
+
+.auth__button {
+  padding: 10px 80px 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  transition: all 0.5s ease-in-out;
+}
+
+.auth__button:hover {
+  color: #0079bf;
+}

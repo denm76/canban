@@ -1,0 +1,14 @@
+.footer {
+	padding: 17px 19px 17px 21px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	background-color: #0067a3;
+	color:#fff;
+}
+.footer__tasks{
+	display:flex;
+}
+.footer__activetasks{
+	margin-right: 36px;
+}

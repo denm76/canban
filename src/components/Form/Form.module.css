@@ -1,0 +1,30 @@
+.form {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form__input {
+	display: block;
+	border: 1px solid #465671;
+	border-radius: 8px;
+	margin-bottom: 7px;
+	padding: 8px;
+}
+
+.form__textarea {
+	resize: none;
+	font-family: 'Lato', sans-serif;
+}
+.form__button {
+	background-color: #0079BF;
+	padding: 4px 10px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	text-align: center;
+	width: 40%;
+	cursor: pointer;
+}
+
