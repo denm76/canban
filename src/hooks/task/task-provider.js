@@ -7,7 +7,7 @@ export const TaskProvider = (props) => {
   const context = {
     updateTask: (item) => {
       const task = findById(item.id);
-      task.name = item.name;
+      task.title = item.title;
       task.description = item.description;
       setTasks([...tasks]);
     },

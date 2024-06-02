@@ -3,7 +3,7 @@
   background: #fff;
   border-radius: 8px;
   padding: 20px;
-  min-height: 500px;
+  min-height: calc(100vh - 170px);
 }
 
 .task__title {

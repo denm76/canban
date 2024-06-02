@@ -14,7 +14,7 @@ export default function List(props) {
 
   const [isNewTaskSelectShown, setIsNewTaskSelectShown] = useState(false);
   const [selectedTaskId, setSelectedTaskId] = useState(undefined);
-  const { getTasksByState, getTasksByExcludedState, moveTask, removeTask } =
+  const { getTasksByExcludedState, moveTask, removeTask } =
     useTasks();
 
   function handleClick() {
@@ -51,7 +51,7 @@ export default function List(props) {
         })}
 
         <Button className={classes.list__addButton} onClick={handleClick}>
-          + Add card
+          + Add card" 
         </Button>
         {type === LIST_TYPES.BACKLOG && isFormVisible && (
           <FormAddNewTask
