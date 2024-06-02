@@ -12,3 +12,9 @@
 .footer__activetasks{
 	margin-right: 36px;
 }
+
+@media (max-width:340px){
+	.footer {
+		display: none;
+	}
+}

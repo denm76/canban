@@ -14,3 +14,13 @@
 	font-size: 28px;
 	line-height: 33px;
 }
+
+@media (max-width:340px) {
+	.header__title {
+		display: none;;
+	}
+
+	.header {
+		justify-content: end;
+	}
+}

@@ -1,47 +1,103 @@
 .list {
-	width: 25%;
-  background: #EBECF0;
-	padding: 12px;
-	border-radius: 10px;
-	box-sizing: border-box;
-	margin-right: 24px;
+  width: 25%;
+  background: #ebecf0;
+  padding: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-right: 24px;
+}
+
+.list__taskwrapper {
+  position: relative;
+}
+
+.list__taskwrapper:hover {
+  .list__removetaskbtn {
+    display: block;
+    cursor: pointer;
+    background-color: lightpink;
+    border-radius: 3px;
+  }
 }
 
 .list:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .list__title {
-	margin-top: 0;
+  margin-top: 0;
+}
+
+.list__removetaskbtn {
+  display: none;
+  position: absolute;
+  border: none;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+}
+
+.list__img {
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .list__task {
-	background: #ffffff;
-	color: #000;
-	margin: 7px 0;
-	padding: 8px;
-	border-radius: 8px;
+  background: #ffffff;
+  color: #000;
+  margin: 7px 0;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .list__task:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .list__taskLink {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .list__addButton {
-	background: none;
-	border: none;
-	padding: 4px 5px;
-	appearance: none;
-	font-size: 15px;
-	color: #737373;
-	margin-top: 15px;
-	cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 5px;
+  appearance: none;
+  font-size: 15px;
+  color: #737373;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .list__addButton:hover {
-	background: #fff;
+  background: #fff;
+}
+
+.list__selection {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 5px;
+}
+.list__submitbutton {
+  border-radius: 5px;
+  border:none;
+  width: 102px;
+  height: 29px;
+  background: #0079bf;
+  color:#fff;
+}
+
+@media (min-width: 341px) and (max-width: 1150px) {
+  .list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 340px) {
+  .list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }

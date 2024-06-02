@@ -1,3 +1,15 @@
 .board {
 	display: flex;
 }
+
+@media (min-width:341px) and (max-width:1150px){
+	.board {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width:340px) {
+	.board {
+		flex-direction: column;
+	}
+}
