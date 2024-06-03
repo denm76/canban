@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { TaskContext } from "./task-context";
 
 export const TaskProvider = (props) => {
@@ -5,18 +6,18 @@ export const TaskProvider = (props) => {
   const findById = (id) => tasks.find((task) => task.id === id);
 
   const context = {
-    updateTask: (item) => {
+    updateTask: useCallback((item) => {
       const task = findById(item.id);
       task.title = item.title;
       task.description = item.description;
       setTasks([...tasks]);
-    },
-    removeTask: (id) => {
+    }, [tasks, findById, setTasks]),
+    removeTask: useCallback((id) => {
       const task = findById(id);
       if (task) {
-        setTasks([...tasks.filter((item) => item.id !== task.id)]);
+        setTasks(tasks.filter((item) => item.id !== task.id));
       }
-    },
+    }, [tasks, findById, setTasks]),
     getTaskById: findById,
     getTasksByState: (status) => {
       return tasks.filter((task) => task.status === status);
@@ -24,13 +25,13 @@ export const TaskProvider = (props) => {
     getTasksByExcludedState: (status) => {
       return tasks.filter((task) => task.status !== status);
     },
-    moveTask: (id, status) => {
+    moveTask: useCallback((id, status) => {
       const task = findById(id);
       if (task) {
         task.status = status;
       }
       setTasks([...tasks]);
-    },
+    }, [tasks, findById, setTasks]),
   };
 
   return (
